@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void UpdateBrickNumber()
@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayAgain()
     {
+        Debug.Log("Button Pressed");
         SceneManager.LoadScene("level1");
     }
 

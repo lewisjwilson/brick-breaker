@@ -30,7 +30,7 @@ public class BallScript : MonoBehaviour
             transform.position = paddle.position;
         }
 
-        if (Input.GetButton("Jump") && !inPlay) //otherwise velocity rapidly increases
+        if (Input.touchCount > 0 && !inPlay) //otherwise velocity rapidly increases
         {
             inPlay = true;
             rb.AddForce(Vector2.up * speed);
